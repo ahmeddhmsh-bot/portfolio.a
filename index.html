@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eng. Ahmed Dahmash | Portfolio of Selected Works</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Architectural Aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        arch: {
+                            dark: '#111111',
+                            muted: '#1A1A1A',
+                            accent: '#C5A880', /* Premium Warm Gold/Bronze Accent */
+                            light: '#F9F9F9',
+                            slate: '#666666'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .project-card:hover .project-overlay { opacity: 1; }
+    </style>
+</head>
+<body class="bg-arch-light text-arch-dark font-sans selection:bg-arch-accent selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-widest text-arch-dark">
+                AHMED <span class="text-arch-accent font-light">DAHMASH</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-xs font-semibold uppercase tracking-widest">
+                <a href="#profile" class="hover:text-arch-accent transition">Profile</a>
+                <a href="#capabilities" class="hover:text-arch-accent transition">Capabilities</a>
+                <a href="#projects" class="hover:text-arch-accent transition">Selected Works</a>
+                <a href="#contact" class="hover:text-arch-accent transition">Contact</a>
+            </div>
+            <button class="md:hidden text-xl" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen flex items-center bg-arch-dark text-white pt-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1920')] bg-cover bg-center opacity-25"></div>
+        <div class="max-w-7xl mx-auto px-6 py-20 relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-8 space-y-6">
+                <span class="text-arch-accent uppercase tracking-widest text-sm font-semibold inline-block border-b-2 border-arch-accent pb-1">
+                    Architectural Engineer
+                </span>
+                <h1 class="text-5xl md:text-7xl font-light font-serif tracking-tight leading-none">
+                    Portfolio of <br><span class="font-bold italic text-arch-accent">Selected Works</span>
+                </h1>
+                <p class="text-gray-400 max-w-xl text-sm md:text-base font-light leading-relaxed">
+                    Sana'a / KSA — 2026. A showcase of structural precision, high-end interior aesthetics, and seamless site execution management[span_0](start_span)[span_0](end_span).
+                </p>
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <a href="#projects" class="bg-arch-accent hover:bg-white hover:text-arch-dark text-arch-dark px-8 py-4 text-xs font-bold uppercase tracking-widest transition duration-300">
+                        Explore Works
+                    </a>
+                    <a href="#contact" class="border border-white/20 hover:border-arch-accent px-8 py-4 text-xs font-bold uppercase tracking-widest transition duration-300">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+            <!-- KPI Counter Metric Section -->
+            <div class="lg:col-span-4 grid grid-cols-2 gap-4">
+                <div class="bg-arch-muted p-6 border-l-4 border-arch-accent">
+                    <div class="text-3xl font-bold text-arch-accent">4+</div>
+                    <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Years Design & Site Experience[span_1](start_span)[span_1](end_span)</div>
+                </div>
+                <div class="bg-arch-muted p-6 border-l-4 border-arch-accent">
+                    <div class="text-3xl font-bold text-arch-accent">28</div>
+                    <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Major Deliverables[span_2](start_span)[span_2](end_span)</div>
+                </div>
+                <div class="bg-arch-muted p-6 border-l-4 border-arch-accent">
+                    <div class="text-3xl font-bold text-arch-accent">15+</div>
+                    <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Supervised Complexes</div>
+                </div>
+                <div class="bg-arch-muted p-6 border-l-4 border-arch-accent">
+                    <div class="text-3xl font-bold text-arch-accent">CAPM</div>
+                    <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Civil Academy Certified[span_3](start_span)[span_3](end_span)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFILE / ABOUT SECTION -->
+    <section id="profile" class="py-24 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div class="lg:col-span-4 sticky top-28">
+            <h2 class="text-xs uppercase tracking-widest text-arch-accent font-bold mb-2">01 / Profile</h2>
+            <h3 class="text-3xl font-serif font-bold tracking-tight">Both sides of the project</h3>
+        </div>
+        <div class="lg:col-span-8 space-y-6 text-arch-slate font-light leading-relaxed text-base">
+            <p class="text-xl text-arch-dark font-medium font-serif italic">
+                "Working seamlessly across both the drawing board and the scaffold.[span_4](start_span)"[span_4](end_span)
+            </p>
+            <p>
+                I produce architectural packages and photorealistic 3D visualizations using standard industry applications including <strong class="text-arch-dark">Autodesk Revit, AutoCAD, Lumion, and 3ds Max</strong>[span_5](start_span)[span_5](end_span). Simultaneously, I master the execution lifecycle on-site from initial excavation works to advanced final spatial finishing[span_6](start_span)[span_6](end_span).
+            </p>
+            <p>
+                My technical capabilities cover precision quantity surveying, strict QA/QC compliance management, detailed technical writing, corporate contract structuring, and multi-tier coordination across high-profile commercial clients, contractors, and municipal governmental authorities[span_7](start_span)[span_7](end_span).
+            </p>
+        </div>
+    </section>
+
+    <!-- CAPABILITIES SECTION -->
+    <section id="capabilities" class="py-24 bg-arch-dark text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-arch-accent font-bold mb-2">02 / Capabilities</h2>
+                <h3 class="text-3xl font-serif font-bold tracking-tight">Professional Skill Infrastructure</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cap 1 -->
+                <div class="p-8 bg-arch-muted border border-white/5 hover:border-arch-accent/30 transition duration-300">
+                    <div class="text-arch-accent text-2xl mb-4"><i class="fa-solid fa-compass-drafting"></i></div>
+                    <h4 class="text-lg font-bold mb-2">Design & Drafting</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed font-light">Advanced Autodesk Revit (BIM architectural integration) alongside custom multi-scale AutoCAD 2D/3D working drawings compilation[span_8](start_span)[span_8](end_span).</p>
+                </div>
+                <!-- Cap 2 -->
+                <div class="p-8 bg-arch-muted border border-white/5 hover:border-arch-accent/30 transition duration-300">
+                    <div class="text-arch-accent text-2xl mb-4"><i class="fa-solid fa-cubes"></i></div>
+                    <h4 class="text-lg font-bold mb-2">3D Visualization</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed font-light">High-fidelity texturing and cinematic engine production inside 3ds Max, Lumion, SketchUp, and extensive Adobe Photoshop post-processing[span_9](start_span)[span_9](end_span).</p>
+                </div>
+                <!-- Cap 3 -->
+                <div class="p-8 bg-arch-muted border border-white/5 hover:border-arch-accent/30 transition duration-300">
+                    <div class="text-arch-accent text-2xl mb-4"><i class="fa-solid fa-helmet-safety"></i></div>
+                    <h4 class="text-lg font-bold mb-2">Site & Construction</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed font-light">Comprehensive localized site supervision management, implementing strict operational QA/QC frameworks throughout the structural execution lifecycle[span_10](start_span)[span_10](end_span).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SELECTED PROJECTS WORK SECTION -->
+    <section id="projects" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-12 gap-6">
+            <div>
+                <h2 class="text-xs uppercase tracking-widest text-arch-accent font-bold mb-2">03 / Selected Works</h2>
+                <h3 class="text-3xl font-serif font-bold tracking-tight">Architectural Deliverables Catalog[span_11](start_span)[span_11](end_span)</h3>
+            </div>
+            <!-- FILTER BUTTONS -->
+            <div class="flex flex-wrap gap-2 text-xs uppercase tracking-wider font-semibold" id="filterContainer">
+                <button class="px-4 py-2 bg-arch-dark text-white rounded-xs transition duration-200 filter-btn" data-filter="all">All Works</button>
+                <button class="px-4 py-2 bg-white text-arch-dark hover:bg-gray-100 rounded-xs transition duration-200 filter-btn" data-filter="residential">Residential</button>
+                <button class="px-4 py-2 bg-white text-arch-dark hover:bg-gray-100 rounded-xs transition duration-200 filter-btn" data-filter="interior">Interior</button>
+                <button class="px-4 py-2 bg-white text-arch-dark hover:bg-gray-100 rounded-xs transition duration-200 filter-btn" data-filter="mixed">Mixed-Use</button>
+                <button class="px-4 py-2 bg-white text-arch-dark hover:bg-gray-100 rounded-xs transition duration-200 filter-btn" data-filter="others">Specialized</button>
+            </div>
+        </div>
+
+        <!-- PROJECTS DYNAMIC GRID CONTAINER -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projectsGrid">
+            <!-- Project Cards generated dynamically by JavaScript -->
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL WITH SMART ROTATION SYSTEM -->
+    <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-black/95 flex flex-col items-center justify-between p-4 md:p-6 backdrop-blur-sm transition-all duration-300">
+        <!-- Top Bar: Title & Close Action -->
+        <div class="w-full flex justify-between items-center text-white max-w-5xl border-b border-white/10 pb-4">
+            <div class="flex flex-col">
+                <h4 id="lightboxTitle" class="font-serif text-lg font-medium text-arch-accent">Project Preview</h4>
+                <p id="lightboxLocation" class="text-[10px] text-gray-400 uppercase tracking-widest mt-0.5"></p>
+            </div>
+            <button onclick="closeLightbox()" class="text-2xl text-gray-400 hover:text-white transition w-10 h-10 flex items-center justify-center rounded-full bg-white/5">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        
+        <!-- Center Viewport: Image Canvas Workspace -->
+        <div class="flex-1 flex items-center justify-center overflow-hidden my-6 w-full max-w-4xl relative">
+            <img id="lightboxImg" src="" alt="Global Preview" class="max-w-full max-h-[70vh] object-contain transition-transform duration-300 ease-in-out transform rotate-0 shadow-2xl rounded-sm">
+        </div>
+        
+        <!-- Bottom Ergonomic Bar: Specialized Image Rotators -->
+        <div class="flex items-center gap-6 bg-arch-muted border border-white/10 px-8 py-4 rounded-full text-white text-xs tracking-widest uppercase font-semibold shadow-xl mb-2">
+            <button onclick="rotateImage(-90)" class="flex items-center gap-2 hover:text-arch-accent transition group">
+                <i class="fa-solid fa-rotate-left text-arch-accent group-hover:-rotate-45 transition"></i> Rotate Left
+            </button>
+            <div class="w-px h-4 bg-white/20"></div>
+            <button onclick="resetRotation()" class="text-gray-400 hover:text-white transition text-[10px]" title="Reset Orientation">
+                Reset
+            </button>
+            <div class="w-px h-4 bg-white/20"></div>
+            <button onclick="rotateImage(90)" class="flex items-center gap-2 hover:text-arch-accent transition group">
+                Rotate Right <i class="fa-solid fa-rotate-right text-arch-accent group-hover:rotate-45 transition"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- CONTACT FOOTER -->
+    <section id="contact" class="bg-arch-dark text-white py-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <div class="lg:col-span-5 space-y-6">
+                <h2 class="text-xs uppercase tracking-widest text-arch-accent font-bold">04 / Get In Touch</h2>
+                <h3 class="text-4xl font-serif font-light">Let's build <br><span class="font-bold italic text-arch-accent">something legendary</span></h3>
+                <p class="text-gray-400 text-sm font-light leading-relaxed max-w-sm">
+                    Open for high-profile architectural design mandates, BIM structural consulting, and advanced executive construction supervision operations[span_12](start_span)[span_12](end_span).
+                </p>
+                <div class="space-y-3 pt-4 text-sm font-medium tracking-wide">
+                    <a href="mailto:ahmeddhmsh@gmail.com" class="flex items-center gap-3 hover:text-arch-accent transition">
+                        <i class="fa-regular fa-envelope text-arch-accent w-5"></i> ahmeddhmsh@gmail.com
+                    </a>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-7 bg-arch-muted p-8 border border-white/5">
+                <form class="grid grid-cols-1 sm:grid-cols-2 gap-6" onsubmit="event.preventDefault(); alert('Message simulation transmitted successfully!');">
+                    <div>
+                        <label class="block text-[10px] uppercase font-bold tracking-widest text-gray-400 mb-2">Your Name</label>
+                        <input type="text" class="w-full bg-arch-dark border border-white/10 p-3 text-xs focus:border-arch-accent outline-none transition text-white" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label class="block text-[10px] uppercase font-bold tracking-widest text-gray-400 mb-2">Email Address</label>
+                        <input type="email" class="w-full bg-arch-dark border border-white/10 p-3 text-xs focus:border-arch-accent outline-none transition text-white" placeholder="john@example.com" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label class="block text-[10px] uppercase font-bold tracking-widest text-gray-400 mb-2">Message Specification</label>
+                        <textarea rows="4" class="w-full bg-arch-dark border border-white/10 p-3 text-xs focus:border-arch-accent outline-none transition text-white" placeholder="Describe the structural scale or aesthetic goals..." required></textarea>
+                    </div>
+                    <div class="sm:col-span-2 pt-2">
+                        <button type="submit" class="w-full bg-arch-accent text-arch-dark hover:bg-white text-xs font-bold uppercase tracking-widest py-4 transition duration-300">
+                            Transmit Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/5 text-center text-[10px] text-gray-500 uppercase tracking-widest">
+            &copy; 2026 Eng. Ahmed Dahmash. Built securely for GitHub deployment. All Rights Reserved[span_13](start_span)[span_13](end_span).
+        </div>
+    </section>
+
+    <!-- DYNAMIC PORTFOLIO ENGINE & LIGHTBOX CORE CONTROLLER -->
+    <script>
+        // Comprehensive Project Data Matrix[span_14](start_span)[span_14](end_span)
+        const projectCollection = [
+            { id: "01", name: "Residential Villa, Riyadh", year: "2025", type: "residential", location: "Riyadh, KSA", desc: "Full architectural working design set package[span_15](start_span)[span_15](end_span).", img: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=600" },
+            { id: "02", name: "Bin Rasheed Residential Villa", year: "2025", type: "residential", location: "Riyadh, KSA", desc: "Premium engineering layouts for Mr. Abdallah Bin Rasheed[span_16](start_span)[span_16](end_span).", img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600" },
+            { id: "03", name: "Al-Malaki Furniture Showroom", year: "2026", type: "interior", location: "Sana'a, Yemen", desc: "High-end retail commercial fit-out design & build realization[span_17](start_span)[span_17](end_span).", img: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=600" },
+            { id: "04", name: "Ibrahim Villa Ceiling Design", year: "2026", type: "interior", location: "Sana'a, Yemen", desc: "Decorative multi-concept gypsum lighting models[span_18](start_span)[span_18](end_span).", img: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?q=80&w=600" },
+            { id: "05", name: "Ibn Sina Hospital Offices Interior", year: "2025", type: "interior", location: "Sana'a, Yemen", desc: "Administrative executive departments and reception architecture[span_19](start_span)[span_19](end_span).", img: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600" },
+            { id: "06", name: "Al-Sarh Al-Dhahabi Office Design", year: "2025", type: "interior", location: "Sana'a, Yemen", desc: "Golden Tower corporate meeting wings & wood-paneled feature walls[span_20](start_span)[span_20](end_span).", img: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=600" },
+            { id: "07", name: "Villa Facade Design", year: "2025", type: "residential", location: "Sana'a, Yemen", desc: "Three-storey luxury stone villa dynamic elevations modeling[span_21](start_span)[span_21](end_span).", img: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=600" },
+            { id: "08", name: "Jibran Al-Makhrafi Residential Villa", year: "2025", type: "residential", location: "Sana'a, Yemen", desc: "Full structural design-and-build structural site supervision setup[span_22](start_span)[span_22](end_span).", img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=600" },
+            { id: "09", name: "Twin Residential Villas", year: "2025", type: "residential", location: "Sana'a, Yemen", desc: "Two adjacent high-end corner villas site management lifecycles[span_23](start_span)[span_23](end_span).", img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=600" },
+            { id: "10", name: "Administrative Office Tower", year: "2022", type: "mixed", location: "Sana'a, Yemen", desc: "High-rise architectural design featuring a bridged twin massing configuration[span_24](start_span)[span_24](end_span).", img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600" }
+        ];
+
+        const grid = document.getElementById("projectsGrid");
+
+        // UI Injection Matrix with integrated Lightbox open hooks
+        function renderProjects(filter = "all") {
+            grid.innerHTML = "";
+            const targets = filter === "all" ? projectCollection : projectCollection.filter(p => p.type === filter || (filter === "others" && ["landscape", "others"].includes(p.type)));
+            
+            targets.forEach(p => {
+                grid.innerHTML += `
+                    <div class="bg-white border border-gray-100 rounded-xs overflow-hidden relative group project-card transition duration-300 hover:shadow-xl">
+                        <div class="h-64 overflow-hidden relative cursor-pointer" onclick="openLightbox('${p.img}', '${p.name}', '${p.location}')">
+                            <img src="${p.img}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+                                <span class="bg-white/90 text-arch-dark p-3 rounded-full text-xs font-bold tracking-widest uppercase shadow-md flex items-center gap-2">
+                                   <i class="fa-solid fa-magnifying-glass-plus"></i> View & Rotate
+                                </span>
+                            </div>
+                            <div class="absolute top-4 left-4 bg-arch-dark/80 text-arch-accent px-3 py-1 text-[10px] font-bold tracking-widest uppercase">
+                                ID: ${p.id}
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-2">
+                            <span class="text-[10px] uppercase tracking-widest text-arch-accent font-bold">${p.location}</span>
+                            <h4 class="text-base font-bold text-arch-dark font-serif tracking-tight line-clamp-1">${p.name}</h4>
+                            <p class="text-xs text-arch-slate font-light leading-relaxed line-clamp-2">${p.desc}</p>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        // --- Lightbox & Image Rotation Framework State Engine ---
+        let currentRotation = 0;
+        const modal = document.getElementById("lightboxModal");
+        const modalImg = document.getElementById("lightboxImg");
+        const modalTitle = document.getElementById("lightboxTitle");
+        const modalLocation = document.getElementById("lightboxLocation");
+
+        function openLightbox(imgUrl, title, location) {
+            currentRotation = 0; // Reset state for new view instantiation
+            modalImg.style.transform = `rotate(${currentRotation}deg)`;
+            modalImg.src = imgUrl;
+            modalTitle.innerText = title;
+            modalLocation.innerText = location;
+            
+            modal.classList.remove("hidden");
+            document.body.classList.add("overflow-hidden"); // Guard against viewport scroll pollution
+        }
+
+        function closeLightbox() {
+            modal.classList.add("hidden");
+            document.body.classList.remove("overflow-hidden");
+        }
+
+        function rotateImage(degrees) {
+            currentRotation += degrees;
+            modalImg.style.transform = `rotate(${currentRotation}deg)`;
+        }
+
+        function resetRotation() {
+            currentRotation = 0;
+            modalImg.style.transform = `rotate(${currentRotation}deg)`;
+        }
+
+        // Filter Controls Setup
+        document.querySelectorAll(".filter-btn").forEach(btn => {
+            btn.addEventListener("click", (e) => {
+                document.querySelectorAll(".filter-btn").forEach(b => {
+                    b.classList.remove("bg-arch-dark", "text-white");
+                    b.classList.add("bg-white", "text-arch-dark");
+                });
+                e.target.classList.remove("bg-white", "text-arch-dark");
+                e.target.classList.add("bg-arch-dark", "text-white");
+                renderProjects(e.target.getAttribute("data-filter"));
+            });
+        });
+
+        // Initialize Render Engine View
+        renderProjects();
+    </script>
+</body>
+</html>
